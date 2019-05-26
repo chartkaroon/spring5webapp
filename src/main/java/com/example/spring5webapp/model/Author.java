@@ -17,6 +17,9 @@ public class Author {
     @ManyToMany(mappedBy = "authors")
     Set<Book> books = new HashSet<>();
 
+    //Default constructor is needed !
+    public Author() {}
+
     public Author(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;

@@ -24,6 +24,9 @@ public class Book {
                inverseJoinColumns = @JoinColumn(name = "author_id"))
     Set<Author> authors = new HashSet<>();
 
+    //Default constructor is needed !
+    public Book() {}
+
     public Book(String title, String isbn, Publisher publisher) {
         this.title = title;
         this.isbn = isbn;
